@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-	
-<div class="slider" id="slider">
-  <div class="slide showing">Slide 1</div>
-  <div class="slide">Slide 2</div>
-  <div class="slide">Slide 3</div>
-  <div class="slide">Slide 4</div>
-  <div class="slide">Slide 5</div>
-</div>
-	
-<button id="pause">Pause</button>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="slider" id="slider">
+      <div class="slide showing"><p>Slide 1</p></div>
+      <div class="slide"><p>Slide 2</p></div>
+      <div class="slide">
+        <img src="img/pexels-felix-mittermeier-956981.jpg" alt="image" />
+      </div>
+      <div class="slide"><p>Slide 4</p></div>
+      <div class="slide"><p>Slide 5</p></div>
+    </div>
 
-<button class="controls" id="previous">Previous</button>
-<button class="controls" id="next">Next</button>
+    <button id="pause">Pause</button>
 
-<div class="dots">
-  <span class="dot" onclick="dotToSlide(1)">1</span> 
-  <span class="dot" onclick="dotToSlide(2)">2</span> 
-  <span class="dot" onclick="dotToSlide(3)">3</span> 
-  <span class="dot" onclick="dotToSlide(4)">4</span> 
-  <span class="dot" onclick="dotToSlide(5)">5</span> 
-</div>
+    <button class="controls" id="previous">Previous</button>
+    <button class="controls" id="next">Next</button>
 
-<script src="./dist/bundle.js"></script>
-</body>
+    <div class="dots">
+      <span class="dot" onclick="dotToSlide(1)">1</span>
+      <span class="dot" onclick="dotToSlide(2)">2</span>
+      <span class="dot" onclick="dotToSlide(3)">3</span>
+      <span class="dot" onclick="dotToSlide(4)">4</span>
+      <span class="dot" onclick="dotToSlide(5)">5</span>
+    </div>
+
+    <script src="./dist/bundle.js"></script>
+  </body>
 </html>
